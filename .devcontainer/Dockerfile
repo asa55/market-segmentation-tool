@@ -8,4 +8,5 @@ RUN apt-get update \
     && npm install -g gatsby-cli \
     && npm install -g gh-pages
 
-CMD [ "npm", "install", "--prefix", "./gatsby-site", "gatsby-theme-material-ui", "@material-ui/core" ]
+# CMD [ "npm", "install", "--prefix", "./gatsby-site", "gatsby-theme-material-ui", "@material-ui/core" ]
+CMD [ "gatsby", "telemetry", "--disable" ]
