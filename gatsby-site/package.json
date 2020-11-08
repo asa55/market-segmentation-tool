@@ -1,5 +1,5 @@
 {
-  "name": "market-segmentation-tool",
+  "name": "market-segmentation-tool-dev",
   "private": false,
   "description": "The name says it all",
   "version": "1.0.0",
@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -27,9 +27,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/asa55/market-segmentation-tool-dev"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/asa55/market-segmentation-tool-dev/issues"
   }
 }
