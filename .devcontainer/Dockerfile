@@ -5,8 +5,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 
 RUN apt-get update \
     && apt-get upgrade \
-    && npm install -g gatsby-cli \
-    && npm install -g gh-pages
+    && npm install -g gatsby-cli
 
-# CMD [ "npm", "install", "--prefix", "./gatsby-site", "gatsby-theme-material-ui", "@material-ui/core" ]
+# CMD [ "npm", "install", "--prefix", "./gatsby-site", "gatsby-theme-material-ui", "@material-ui/core", "@material-ui/icons" ]
 CMD [ "gatsby", "telemetry", "--disable" ]
