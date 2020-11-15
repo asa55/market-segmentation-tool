@@ -1,6 +1,6 @@
 import React from "react";
-import Dashboard from "../templates/Dashboard";
+import App from "../templates/App";
 
 export default function Home() {
-  return ( <Dashboard /> )
+  return <App />
 }

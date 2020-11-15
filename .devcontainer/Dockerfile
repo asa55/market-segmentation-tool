@@ -5,7 +5,8 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 
 RUN apt-get update \
     && apt-get upgrade \
-    && npm install -g gatsby-cli
+    && npm install -g gatsby-cli \
+    && npm install -g react-redux
 
 # CMD [ "npm", "install", "--prefix", "./gatsby-site", "gatsby-theme-material-ui", "@material-ui/core", "@material-ui/icons" ]
-CMD [ "gatsby", "telemetry", "--disable" ]
+# CMD [ "gatsby", "telemetry", "--disable" ]
